@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> color-translate Example!</title>
+</head>
+<body>    
+<h1 id="title"></h1>
+</body>
+<script src="../lib/color-translate.min.js"></script>
+<script>
+
+var color ='hsl(218, 80%, 65%)';
+elem = document.getElementById("title");
+elem.innerHTML = ct.getName(color,true);
+elem.style.color = ct.getHex(color);
+console.log(ct.getHSL('#5e93ed', {}));
+console.log(ct.getRGB(color, []));
+console.log(ct.getRGB(color));
+console.log("getName "+ct.getName(color));
+console.log("getName "+ct.getName(color, true));
+
+</script>
+</html>
+
